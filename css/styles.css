@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 100%;
+  font-weight: 300;
+  color: #343434;
+  line-height: 1.6;
+  background-color: #fefefe;
+  font-size: 1.4rem;
+}
+ul, ol {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+h1, h2 {
+  font-family: 'Times New Roman', Times, serif;
+}
+h1 {
+  font-size: 3.6rem;
+}
+h2 {
+  font-size: 2.8rem;
+}
+.container {
+  width: 90%;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+.header {
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  display: block;
+  width: 24px;
+}
+.globalNav ul {
+  margin: 0;
+  padding: 0;
+}
+.globalNav li {
+  display: inline-block;
+  margin-right: 1em;
+}
+.globalNav li a {
+  color: #343434;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.globalNav li a:hover {
+  opacity: .8;
+  text-decoration: underline;
+}
+.footer {
+  background-color: #111;
+  color: #eee;
+  padding: 2rem 0;
+  margin-top: 6rem;
+}
+.copyright {
+  text-align: center;
+  font-size: 10px;
+}
+
+.hero__heading {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 6vw;
+  margin: 1.5em 0 1rem;
+}
+.hero__heading + p {
+  font-size: 1.5vw;
+}
+.hero__img{
+  margin: 6rem auto;
+  display: block;
+  width: 100%;
+}
+
+table {
+  width:100%;
+}
+table, th, td {
+    border: 1px solid #111;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table th {
+    background-color: #111;
+    color: #fefefe;
+}
+.scheduleTable tr:nth-child(even) {
+  background-color: #eee;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.photo {
+  width: 32%;
+}
+.photo img {
+  width: 100%;
+}
+
+.contactForm {
+  border:5px solid #111;
+  padding: 5rem;
+  max-width: 600px;
+  width: 100%;
+  margin: 5rem auto;
+}
+.contactForm .item {
+  margin-bottom: 1rem;
+}
+.contactForm label {
+  display: block;
+  margin-bottom: .5rem;
+}
+.contactForm input, .contactForm textarea {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 2rem;
+  border: 1px solid #ddd;
+}
+.contactForm textarea {
+  height: 200px;
+}
+.submitButton {
+  border: 1px solid #111;
+  background-color: #111;
+  color: #eee;
+  font-size: 1.6rem;
+  font-weight: 300;
+  padding: 1em 3em;
+  cursor: pointer;
+}
+.submitButton:hover {
+  border: 1px solid #ddd;
+  background-color: #fefefe;
+  color: #111;
+}
+@media screen and (max-width: 414px) {
+  .header {
+    display: block;
+  }
+  .photo {
+    width: 100%;
+  }
+  .contactForm {
+    padding: 2rem;
+  }
+}
